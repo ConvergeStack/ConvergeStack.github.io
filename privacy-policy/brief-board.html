@@ -1,11 +1,422 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html amp lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brief Board | Privacy Policy</title>
+  <meta charset="utf-8">
+  <title>Privacy Policy | BriefBoard</title>
+  <link rel="canonical" href="https://convergestack.github.io/privacy-policy/brief-board">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-custom>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --brand: #2563eb;
+      --brand-soft: #dbeafe;
+      --success: #065f46;
+      --max: 860px;
+      --radius: 20px;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f8fafc;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 55%, #2563eb 100%);
+      color: #fff;
+      padding: 56px 20px 40px;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: 34px;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: rgba(255,255,255,0.88);
+      font-size: 17px;
+      margin: 0;
+    }
+
+    main {
+      padding: 24px 20px 64px;
+      margin-top: -18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+
+    .meta-box {
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px 16px;
+    }
+
+    .meta-label {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .meta-value {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    h2 {
+      font-size: 22px;
+      line-height: 1.25;
+      margin: 32px 0 12px;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      font-size: 17px;
+      margin: 20px 0 8px;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: #1e293b;
+    }
+
+    ul {
+      margin: 0 0 16px 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 0 8px;
+      color: #1e293b;
+    }
+
+    .note {
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin: 18px 0;
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+    }
+
+    .note strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #065f46;
+    }
+
+    .toc {
+      display: grid;
+      gap: 10px;
+      margin: 8px 0 28px;
+    }
+
+    .toc a {
+      text-decoration: none;
+      color: var(--brand);
+      background: var(--brand-soft);
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--line);
+      margin: 28px 0;
+    }
+
+    .footer {
+      margin-top: 32px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    a { color: var(--brand); }
+    code {
+      background: #eff6ff;
+      color: #1d4ed8;
+      border-radius: 8px;
+      padding: 2px 6px;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 768px) {
+      .hero { padding-top: 40px; }
+      h1 { font-size: 28px; }
+      .card { padding: 22px; border-radius: 18px; }
+      .meta { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-    <p>Brief Board</p>
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow">BriefBoard</span>
+      <h1>Privacy Policy</h1>
+      <p class="lead">
+        This Privacy Policy explains how BriefBoard, developed by ConvergeStack, LLC, handles information when you use the app.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <article class="card">
+        <div class="meta">
+          <div class="meta-box">
+            <span class="meta-label">App</span>
+            <span class="meta-value">BriefBoard</span>
+          </div>
+          <div class="meta-box">
+            <span class="meta-label">Developer</span>
+            <span class="meta-value">ConvergeStack, LLC</span>
+          </div>
+          <div class="meta-box">
+            <span class="meta-label">Effective date</span>
+            <span class="meta-value">March 12, 2026</span>
+          </div>
+        </div>
+
+        <div class="note">
+          <strong>Quick summary</strong>
+          BriefBoard is a demo dashboard app that runs entirely on your device. It does not collect personal data, has no user accounts, no ads, and no third-party analytics. All data shown in the app is illustrative sample data.
+        </div>
+
+        <nav class="toc" aria-label="Table of contents">
+          <a href="#information-we-collect">1. Information We Collect</a>
+          <a href="#how-we-use-information">2. How We Use Information</a>
+          <a href="#notifications">3. Notifications</a>
+          <a href="#offline-storage">4. Offline Storage</a>
+          <a href="#third-party-services">5. Third-Party Services</a>
+          <a href="#data-sharing">6. Data Sharing</a>
+          <a href="#data-retention">7. Data Retention</a>
+          <a href="#your-choices">8. Your Choices</a>
+          <a href="#security">9. Data Security</a>
+          <a href="#children">10. Children's Privacy</a>
+          <a href="#international-transfers">11. International Data Transfers</a>
+          <a href="#changes">12. Changes to This Policy</a>
+          <a href="#contact">13. Contact Us</a>
+        </nav>
+
+        <section id="overview">
+          <p>
+            BriefBoard is a free mobile dashboard designed to showcase how organizations can transform complex business metrics into clear, glanceable mobile insights. The app runs entirely on your device, uses illustrative sample data, and includes widgets, scheduled summaries, smart alerts, offline access, and theme customization.
+          </p>
+          <p>
+            We respect your privacy and are committed to keeping our data practices transparent and easy to understand.
+          </p>
+        </section>
+
+        <section id="information-we-collect">
+          <h2>1. Information We Collect</h2>
+
+          <h3>a. Personal information</h3>
+          <p>
+            BriefBoard does not require account creation, login, or submission of any personal information. The app does not collect your name, email address, phone number, location, or any other personal identifiers.
+          </p>
+
+          <h3>b. Illustrative sample data</h3>
+          <p>
+            All data displayed in BriefBoard is pre-loaded illustrative sample data used to demonstrate dashboard functionality. It does not represent real customer, patient, transaction, or employee data.
+          </p>
+
+          <h3>c. Device and usage information</h3>
+          <p>
+            BriefBoard does not integrate any third-party analytics or crash-reporting SDKs. However, the Apple App Store and Google Play Store may independently collect basic diagnostics, crash reports, and usage statistics as part of their standard platform services. This collection is governed by Apple's and Google's respective privacy policies, not by this policy.
+          </p>
+
+          <h3>d. Notification preferences</h3>
+          <p>
+            If you enable notifications, the app stores your notification preferences locally on your device. This information is not transmitted to any server.
+          </p>
+
+          <h3>e. Local storage and preferences</h3>
+          <p>
+            BriefBoard stores certain information locally on your device to support app functionality, including theme selection, widget configuration, cached dashboard content for offline mode, and the last sync timestamp. This data remains on your device and is not transmitted externally.
+          </p>
+        </section>
+
+        <section id="how-we-use-information">
+          <h2>2. How We Use Information</h2>
+          <p>
+            Because BriefBoard operates entirely on your device, the information stored locally is used solely to:
+          </p>
+          <ul>
+            <li>display dashboard content and widgets,</li>
+            <li>deliver local morning brief notifications and threshold alerts,</li>
+            <li>support offline access and display sync state indicators,</li>
+            <li>remember your theme, layout, and configuration preferences, and</li>
+            <li>provide a consistent user experience across app sessions.</li>
+          </ul>
+        </section>
+
+        <section id="notifications">
+          <h2>3. Notifications</h2>
+          <p>
+            BriefBoard uses local notifications to deliver scheduled morning summaries and threshold-based alerts. These notifications are generated entirely on your device and do not rely on any external push notification service.
+          </p>
+          <p>
+            Notification content may include high-level metric summaries or recommended actions based on sample data. You can disable notifications at any time through your device's system settings.
+          </p>
+        </section>
+
+        <section id="offline-storage">
+          <h2>4. Offline Storage and Caching</h2>
+          <p>
+            BriefBoard caches dashboard content and related display assets locally on your device to support offline access. Cached information remains available until you clear app data or uninstall the app.
+          </p>
+          <p>
+            The app displays a <code>Last synced at…</code> indicator so you can see when locally stored content was last refreshed.
+          </p>
+        </section>
+
+        <section id="third-party-services">
+          <h2>5. Third-Party Services</h2>
+          <p>
+            BriefBoard does not integrate any third-party analytics, advertising, crash-reporting, or tracking SDKs.
+          </p>
+          <p>
+            The app is built using React Native and Expo and is compiled through Expo Application Services (EAS Build). The build process occurs on Expo's cloud infrastructure; however, the resulting compiled app does not transmit data to Expo's servers during normal use. Over-the-air (OTA) updates are disabled.
+          </p>
+          <p>
+            For more information about Expo's data practices during the build process, see <a href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer">Expo's Privacy Policy</a>.
+          </p>
+          <p>
+            Additionally, the Apple App Store and Google Play Store may collect their own diagnostics and usage data as described in their respective privacy policies:
+          </p>
+          <ul>
+            <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></li>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+          </ul>
+        </section>
+
+        <section id="data-sharing">
+          <h2>6. How We Share Information</h2>
+          <p>
+            We do not sell, rent, or share your personal information with third parties. Because BriefBoard operates entirely on your device and does not collect personal data, there is no user data to share.
+          </p>
+          <p>
+            In the unlikely event we are required to disclose information by applicable law, regulation, legal process, or enforceable government request, we will comply to the extent legally required.
+          </p>
+        </section>
+
+        <section id="data-retention">
+          <h2>7. Data Retention</h2>
+          <p>
+            All app data is stored locally on your device. We do not retain any user data on external servers. Locally stored data remains on your device until you clear the app's data or uninstall the app.
+          </p>
+        </section>
+
+        <section id="your-choices">
+          <h2>8. Your Choices and Controls</h2>
+          <p>You can:</p>
+          <ul>
+            <li>disable notifications through your device's system settings,</li>
+            <li>clear locally stored app data through your device settings,</li>
+            <li>uninstall the app to remove all locally stored data, and</li>
+            <li>contact us with any privacy-related questions or concerns.</li>
+          </ul>
+          <p>
+            Because the app does not collect or transmit personal data, access, correction, deletion, and portability requests under data protection laws (such as GDPR or CCPA) are generally not applicable. If you have questions about your rights under applicable law, please contact us.
+          </p>
+        </section>
+
+        <section id="security">
+          <h2>9. Data Security</h2>
+          <p>
+            Because BriefBoard stores all data locally on your device and does not transmit data to external servers, your information is protected by your device's built-in security features, including device encryption, screen lock, and app sandboxing. We recommend keeping your device's operating system up to date to benefit from the latest security patches.
+          </p>
+        </section>
+
+        <section id="children">
+          <h2>10. Children's Privacy</h2>
+          <p>
+            BriefBoard is not directed to children under 13 (or under 16 in the European Economic Area). The app does not knowingly collect personal information from children. Because the app does not collect personal data from any user, no special data processing of children's information occurs. If you believe a child has somehow provided personal information through the app, please contact us so we can review and address the matter.
+          </p>
+        </section>
+
+        <section id="international-transfers">
+          <h2>11. International Data Transfers</h2>
+          <p>
+            BriefBoard does not transfer any user data to external servers. All app data remains on your device. Platform-level data collection by Apple or Google is subject to their respective privacy policies and data transfer practices.
+          </p>
+        </section>
+
+        <section id="changes">
+          <h2>12. Changes to This Privacy Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. If we make changes, we will update the effective date at the top of this page. We encourage you to review this policy periodically. For material changes, we may also provide notice through the app or app store listing as required by applicable law.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2>13. Contact Us</h2>
+          <p>
+            If you have questions about this Privacy Policy or your privacy, contact:
+          </p>
+          <p>
+            <strong>ConvergeStack, LLC</strong><br>
+            Email: <a href="mailto:info@convergestack.com">info@convergestack.com</a>
+          </p>
+        </section>
+
+        <div class="divider"></div>
+
+        <p class="footer">
+          © 2026 ConvergeStack, LLC. All rights reserved.
+        </p>
+      </article>
+    </div>
+  </main>
 </body>
 </html>
